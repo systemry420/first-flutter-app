@@ -7,6 +7,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Text('Hello world'),);
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(
+        title: const Text('Title'),
+        backgroundColor: Colors.blue,
+        shadowColor: Colors.red,
+        elevation: 5,
+      ),
+      body: const Center(
+          child: Text(
+        'Hello',
+        style: TextStyle(fontSize: 50),
+      )),
+    ));
   }
 }
