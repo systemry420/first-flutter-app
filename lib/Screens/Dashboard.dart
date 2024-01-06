@@ -9,17 +9,28 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('App', style: TextStyle(fontSize: 35, color: Colors.yellow)),
-        backgroundColor: Colors.blue,
-        shadowColor: Colors.red,
-        elevation: 5,
-
+        title: const Text('Appo',
+            style: TextStyle(fontSize: 35, color: Colors.green)),
       ),
-      body: Center(
-          child: Text(
-        "Hello from Dashboard ${getRandom()}",
-        style: TextStyle(fontSize: 50, color: Colors.red), textAlign: TextAlign.center,
-      )),
+      body: Column(children: [
+        IconButton(
+          icon: const Icon(
+            Icons.my_library_music,
+          ),
+          onPressed: () {},
+          color: Colors.orange,
+          iconSize: 100,
+          splashRadius: 500,
+          splashColor: Colors.red,
+        ),
+        const Image(image: AssetImage("images/maxresdefault.jpg")),
+        Center(
+            child: Text(
+          "Hello from Dashboard, \n here's a random number: ${getRandom()}",
+          style: TextStyle(fontSize: 25, color: Colors.red),
+          textAlign: TextAlign.center,
+        )),
+      ]),
     );
   }
 
