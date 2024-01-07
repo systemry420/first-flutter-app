@@ -14,6 +14,34 @@ class ListViews extends StatelessWidget {
         title: Text('List Views'),
         backgroundColor: Colors.greenAccent,
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(child: Text('Header'),),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('tile 1'),
+              subtitle: Text('Subtitle'),
+              trailing: Text('444'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.headphones),
+              title: Text('tile 1'),
+              subtitle: Text('Subtitle'),
+              trailing: Text('444'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.shopping_cart),
+              title: Text('tile 1'),
+              subtitle: Text('Subtitle'),
+              trailing: Text('444'),
+              onTap: () {},
+            ),
+          ],
+        ),
+      ),
       body: Container(
         child: ListView.builder(
           itemCount: products.length,
@@ -28,31 +56,7 @@ class ListViews extends StatelessWidget {
         )
         /* ListView(
           padding: EdgeInsets.all(11),
-            children: [
-              ListTile(
-                leading: Icon(Icons.alarm),
-                title: Text('tile 1'),
-                subtitle: Text('Subtitle'),
-                trailing: Text('444'),
-                onTap: () {},
-                tileColor: Colors.redAccent.shade100,
-              ),
-              ListTile(
-                leading: Icon(Icons.alarm),
-                title: Text('tile 1'),
-                subtitle: Text('Subtitle'),
-                trailing: Text('444'),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: Icon(Icons.alarm),
-                title: Text('tile 1'),
-                subtitle: Text('Subtitle'),
-                trailing: Text('444'),
-                onTap: () {},
-                tileColor: Colors.redAccent.shade100,
-              ),
-            ],
+
           ), */
       )
     );
