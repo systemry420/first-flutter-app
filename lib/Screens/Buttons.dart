@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class Buttons extends StatelessWidget {
+  const Buttons({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,6 @@ class Home extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               onPressed: () {},
-
             ),
           ),
           Center(
@@ -36,7 +35,6 @@ class Home extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               onPressed: null,
-
             ),
           ),
         ],

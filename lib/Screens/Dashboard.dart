@@ -20,7 +20,7 @@ class Dashboard extends StatelessWidget {
           alignment: Alignment.center,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            border: Border.all(color: Colors.black26, width: 10),
+            border: Border.all(color: Colors.black26, width: 10 ),
             boxShadow: [BoxShadow(color: Colors.black, offset: Offset(0, 0), blurRadius: 12)],
             image: DecorationImage(image: AssetImage('images/maxresdefault.jpg'), fit: BoxFit.cover)
           ),
