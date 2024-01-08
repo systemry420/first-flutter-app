@@ -1,3 +1,4 @@
+import 'package:app/Screens/CustomWidget.dart';
 import 'package:app/Screens/Dashboard.dart';
 import 'package:app/Screens/Buttons.dart';
 import 'package:app/Screens/RowsColumns.dart';
@@ -13,11 +14,25 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'First Flutter App',
-      home: StackLayout(),
+      home: Container(
+        child: ListView(
+          children: [
+            CustomWidget(
+              leadingIcon: Icons.add,
+              title: 'Title 1',
+              subtitle: 'Subtitle for item 1',
+            ),
+            CustomWidget(
+              leadingIcon: Icons.add,
+              title: 'Title 2',
+              subtitle: 'Subtitle for item 1',
+            ),
+          ],
+        ),
+      ),
       debugShowCheckedModeBanner: false,
     );
   }
 }
-
