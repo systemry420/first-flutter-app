@@ -11,7 +11,7 @@ class ListViews extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('List Views'),
+        title: const Text('List Views'),
         backgroundColor: Colors.greenAccent,
       ),
       drawer: Drawer(

@@ -1,6 +1,7 @@
 import 'package:app/Screens/Dashboard.dart';
 import 'package:app/Screens/Buttons.dart';
 import 'package:app/Screens/RowsColumns.dart';
+import 'package:app/Screens/StackLayout.dart';
 import 'package:flutter/material.dart';
 
 import 'Screens/ListViews.dart';
@@ -12,9 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'First Flutter App',
-      home: ListViews(),
+      home: StackLayout(),
       debugShowCheckedModeBanner: false,
     );
   }
