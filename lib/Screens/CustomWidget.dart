@@ -13,14 +13,10 @@ class CustomWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(8.0),
-      child: ListTile(
+      return ListTile(
         leading: Icon(Icons.add),
         title: Text('Item 1'),
         subtitle: Text('This is item 1'),
-
-      ),
-    );
+      );
   }
 }

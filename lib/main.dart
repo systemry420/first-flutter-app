@@ -1,3 +1,4 @@
+import 'package:app/Screens/CustomStatefulWidget.dart';
 import 'package:app/Screens/CustomWidget.dart';
 import 'package:app/Screens/Dashboard.dart';
 import 'package:app/Screens/Buttons.dart';
@@ -14,23 +15,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'First Flutter App',
-      home: Container(
-        child: ListView(
-          children: [
-            CustomWidget(
-              leadingIcon: Icons.add,
-              title: 'Title 1',
-              subtitle: 'Subtitle for item 1',
-            ),
-            CustomWidget(
-              leadingIcon: Icons.add,
-              title: 'Title 2',
-              subtitle: 'Subtitle for item 1',
-            ),
-          ],
-        ),
+      home: Scaffold(
+        body: CustomStatefulWidget(),
       ),
       debugShowCheckedModeBanner: false,
     );
